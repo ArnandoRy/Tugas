@@ -1,0 +1,178 @@
+
+nav {
+  background-color: #343436cc;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.icon img {
+  width: 20px;
+}
+.icon a {
+  margin-right: 10px;
+}
+
+/* Akhir Navbar */
+.jumbotron {
+  height: 640px;
+  width: 100%;
+  color: white;
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 20px 0;
+}
+.jumbotron .sidebar {
+  display: flex;
+  gap: 10px;
+}
+.jumbotron .hrl {
+  width: 50px;
+  margin-top: 5px;
+}
+
+.jumbotron h1 {
+  font-weight: 400;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.5px;
+}
+.jumbotron span {
+  color: #ffcf6e;
+}
+.jumbotron .kotak {
+  display: flex;
+  max-width: 380px;
+  background-color: #393a3ce7;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0;
+}
+.jumbotron p {
+  font-weight: 400;
+  margin: auto;
+  font-size: 16px;
+}
+.jumbotron button {
+  background-color: #ffcf6e;
+  color: #eaeaea;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  margin-top: 10px;
+}
+.jumbotron .wave {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* Akhir Jumbotron */
+
+/* About */
+#about {
+  color: #eaeaea;
+}
+.about {
+  text-transform: uppercase;
+}
+
+.picture {
+  /* max-width: 400px;
+  height: 460px; */
+  margin-bottom: 100px;
+}
+.bg {
+  margin: 20px auto 100px;
+  padding: 20px;
+  width: 300px;
+  height: 330px;
+  background-color: #ffcf6e;
+  border-radius: 2px;
+}
+#about picture img {
+  min-width: 300px;
+  background-color: aqua;
+  border: solid 3px white;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  /* left: 50px; */
+}
+
+#about img {
+  width: 70px;
+  margin-right: 10px;
+}
+#about .name {
+  color: #ffcf6e;
+}
+#about h3 {
+  margin: -40px 0 20px;
+}
+#about .sosmed img {
+  width: 15px;
+}
+/* Akhir About */
+
+/* Projects */
+.projects h2 {
+  color: #eaeaea;
+  text-transform: uppercase;
+}
+/* Akhir Project */
+
+/* Contact */
+#contact {
+  color: #eaeaea;
+}
+#contact h2 {
+  text-transform: uppercase;
+}
+#contact button {
+  background-color: #ffcf6e;
+  color: #eaeaea;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+#contact button:hover {
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+/* Akhir Contact */
+/* Responsive break */
+@media (max-width: 910px) {
+  .jumbotron .hrl {
+    display: none;
+  }
+}
+@media (max-width: 764px) {
+  .jumbotron {
+    height: 540px;
+    position: relative;
+  }
+  .jumbotron .kotak {
+    margin: auto;
+  }
+  .jumbotron .hrl {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .jumbotron {
+    height: 540px;
+    position: relative;
+  }
+  .jumbotron .kotak {
+    margin: auto;
+  }
+  .jumbotron .wave {
+    display: inherit;
+  }
+  .jumbotron .hrl {
+    display: none;
+  }
+}

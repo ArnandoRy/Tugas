@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block kontent %}
+<h2 class="align-center">Daftar Barang</h2>
+<table border="1">
+    <tr>
+        <th>Kelas</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Jurusan</th>
+        <th>Matkul</th>
+      
+    </tr>
+{% for Data in kelas %}
+    <tr>
+    
+        <td>{{ Data.kelas }}</td>
+        <td>{{ Data.nama }}</td>
+        <td>{{ Data.nim }}</td>
+        <td>{{ Data.jurusan }}</td>
+        <td>{{ Data.matkul }}</td>
+       
+    </tr>  
+{% endfor %}      
+</table>
+
+{% endblock %}

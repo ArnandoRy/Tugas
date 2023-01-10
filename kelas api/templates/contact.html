@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block kontent %}
+<section id="contact" class="mt-5 pt-5">
+    <div class="container ">
+      <div class="row text-center mb-3"><h2>Contact</h2></div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" />
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea name="pesan" id="pesan" rows="8" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{%endblock%}

@@ -1,0 +1,24 @@
+{% extends 'baseTabel.html' %}
+{% load static %}
+{% block kontent %}
+<h2 class="align-center">Daftar Mahasiswa Asia</h2>
+<table border="1">
+    <tr>
+        <th>Nim</th>
+        <th>Nama</th>
+        <th>SKS</th>
+        <th>Gambar</th>
+        <th>Jenis Kelamin</th>
+    </tr>
+{% for asia in asias %}
+    <tr>
+        <td>{{ asia.nim }}</td>
+        <td>{{ asia.nama }}</td>
+        <td>{{ asia.sks }}</td>
+        <td>{{ asia.link_gbr }}</td>
+        <td>{{ asia.jenis_id_id }}</td>
+    </tr>  
+{% endfor %}      
+</table>
+
+{% endblock %}

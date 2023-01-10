@@ -1,0 +1,62 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block kontent %}
+
+<section id="about">
+    <div class="container pt-5">
+      <div class="row mt-3">
+        <div class="about text-center pt-3">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>About Me</h2>
+            </div>
+          </div>
+        </div>
+        <!-- side left -->
+        <div class="col-md-6 mt-3">
+          <picture>
+            <div class="picture bg">
+              <img src="{% static 'img/girl.png' %}" alt="My Foto" />
+            </div>
+          </picture>
+        </div>
+        <!-- Akhir side left -->
+
+        <!-- side right -->
+        <div class="col-md-6">
+          <p class="name"><img src="{% static 'img/Icon/HrL.png' %%}" alt="" /> I'm Roy Arnando</p>
+          <h3>I'm Forontend Developer Based In Jombang</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, laborum porro! Laudantium facere, cupiditate minima, nulla delectus libero adipisci vero quibusdam natus eius velit modi error corporis.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. a, optio voluptate et mollitia doloremque voluptatibus, officiis, eveniet praesentium architecto asperiores voluptates culpa alias ut!</p>
+          <div class="card bg-dark p-3 mt-4 mb-4">
+            <div class="row">
+              <div class="col">
+                <p>name : Roy Arnando F</p>
+                <p>Phone : +6289 619 109 745</p>
+                <p>Freelace : Available</p>
+              </div>
+              <div class="col">
+                <p>Age : 20</p>
+                <p>Address : Jombang</p>
+                <p>Nasionality : Indonesian</p>
+              </div>
+            </div>
+          </div>
+          <div class="sosmed">
+            <p>
+              Follow Me : <img src="{% static 'img/Icon/HrL2.png' %}" alt="hr" />
+              <a href="http://facebook.com/arnandoroy" target="_blank"><img src="{% static 'img/Icon/FB.png' %%}" alt="fb" /></a>
+              <a href="http://Instagram.com/arnandoroy_" target="_blank"><img src="{% static 'img/Icon/IG.png'%}" alt="ig" /></a>
+              <a href="http://Instagram.com/arnandoroy_" target="_blank"><img src="{% static 'img/Icon/TWIT.png'%}" alt="twiter" /></a>
+              <a href="http://youtube.com/royarnando" target="_blank"><img src="{% static 'img/Icon/YT.png'%}" alt="yt" /></a>
+            </p>
+          </div>
+        </div>
+        <!-- Akhir side right -->
+      </div>
+    </div>
+  </section>
+     {% endblock %}
+
+    
+

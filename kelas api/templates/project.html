@@ -1,0 +1,57 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block kontent %}
+
+    <section id="projects" class="projects pt-5">
+    <div class="container mt-4">
+      <div class="row text-center mb-3">
+        <div class="col-sm-12">
+          <h2>Projects</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Projek1.PNG' %}" alt="project1" />
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste sed animi labore, consequatur aspernatur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Projek2.PNG' %}" alt="project2" />
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste sed animi labore, consequatur aspernatur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Projek3.PNG'%}" alt="project3" />
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste sed animi labore, consequatur aspernatur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Projek2.PNG' %}" alt="project2" />
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste sed animi labore, consequatur aspernatur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Projek1.PNG' %%}" alt="project1" />
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste sed animi labore, consequatur aspernatur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </section>
+  {%endblock%}

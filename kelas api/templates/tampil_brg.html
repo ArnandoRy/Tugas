@@ -1,0 +1,26 @@
+{% extends 'baseTabel.html' %}
+{% load static %}
+{% block kontent %}
+<h2 class="align-center">Daftar Barang</h2>
+<table border="1">
+    <tr>
+        <th>Kode Barang</th>
+        <th>Nama</th>
+        <th>Strok</th>
+        <th>Harga</th>
+        <th>Link Gambar</th>
+        <th>Jenis</th>
+    </tr>
+{% for Barang in barangs %}
+    <tr>
+        <td>{{ Barang.kodebrg }}</td>
+        <td>{{ Barang.nama }}</td>
+        <td>{{ Barang.stok }}</td>
+        <td>{{ Barang.harga }}</td>
+        <td>{{ Barang.link_grb }}</td>
+        <td>{{ Barang.jenis_id_id }}</td>
+    </tr>  
+{% endfor %}      
+</table>
+
+{% endblock %}
